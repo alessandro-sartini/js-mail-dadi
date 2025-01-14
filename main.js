@@ -83,5 +83,29 @@ if (isMailPresent) {
 //! 5. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 //! Buon lavoro e buon divertimento! :slightly_smiling_face
 
+let dadoComputer= Math.floor(Math.random() * 6) + 1;
+// console.log(dadoComputer)
+
+let dadoGiocatore= Math.floor(Math.random() * 6) + 1;
+// console.log(dadoComputer)
+
+
+
+console.log("Hai tirato:", dadoGiocatore);
+console.log("Il computer ha tirato:", dadoComputer);
+
+
+
+isCPUWinner= dadoComputer === dadoGiocatore
+
+if (dadoComputer> dadoGiocatore) {
+    console.log(`il numero del computer e maggiore ${dadoComputer}, vince la CPU`)
+} else if(dadoComputer< dadoGiocatore) {
+    console.log(`il numero dell'utente e maggiore ${dadoGiocatore}, vince l' utente`)
+
+} else {
+    console.log('ahahah avete pareggiato')
+}
+
 
 
